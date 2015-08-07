@@ -1,0 +1,42 @@
+<div ng-controller="GlossCtrl" class="some">
+	<h1>Glosses for today<small>  get some now!</small></h1>
+	<h2>{{firstGloss}}</h2>
+
+
+
+	<ul class="">
+		<li ng-repeat="gloss in glosses">
+			<p class="narovnat">{{gloss.get("text")}}</p>
+		</li>
+	</ul>
+
+
+	<br/>
+
+
+	<div>
+		<p>
+			<button class="btn btn-lg btn-success" ng-click="addGloss()">Add Gloss</button>
+		</p>
+	</div>
+
+
+	<div>
+		<span>{{girl.name}}</span>
+	</div>
+
+	<div>
+                <h2>Seznam holek:</h2>
+                <ul>
+                        <li ng-repeat="girl in girls">
+                                <span>{{girl.name}}</span>
+                                <p>
+                                        {{girl.cycleStartDate}}
+                                </p>
+                        </li>
+                </ul>
+                <p>Totoal number of girls: {{girls.length}}</p>
+        </div>
+
+
+</div>
